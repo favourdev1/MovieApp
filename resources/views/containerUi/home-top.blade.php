@@ -1,10 +1,10 @@
-<x-newDashboard.home-Hero class="px-7 lg:px-12">
+<x-newDashboard.home-Hero class="pl-4 md:pl-7 lg:pl-12  pb-20">
     @php
         $apiUrl = 'https://image.tmdb.org/t/p/original/';
     @endphp @include('layouts.navbar')
 
-    <div class="h-full pb-12  flex flex-col justify-end mt-auto">
-        <p class="text-md rounded-full bg-slate-400 bg-opacity-50 text-white w-max py-2 px-4 mb-6">
+    <div class="h-full pb-12 mt-36 flex flex-col justify-end mt-auto">
+        <p class="text-white rounded-full px-5 py-2 backdrop-blur-sm backdrop-brightness-50 bg-white/30 w-max  text-sm md:text-md ">
             New Movie
         </p>
         <div class="text-white w-full md:w-2/3 xl:w-2/4">
