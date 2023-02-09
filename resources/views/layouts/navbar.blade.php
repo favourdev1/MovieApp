@@ -1,19 +1,26 @@
 <nav x-date="{open: false }" class="bg-transparent text-white   text-white">
    <!-- Primary Navigation Menu -->
-    <div class="max-w-7xll mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between h-16">
-            <div class="flex">
+    <div class="max-w-7xll mx-auto px-4 sm:px-6 lg:px-8" style="background:linear-gradient( to bottom, #000000,transparent)">
+        <div class="flex justify-between h-16 ">
+            <div class="flex" >
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
-                        <x-application-logo class="block h-9 w-auto fill-current text-gray-800 dark:text-gray-200" />
+                        <x-application-logo class="block h-9 w-auto fill-current text-gray-800 text-white" />
                     </a>
                 </div>
 
                 <!-- Navigation Links -->
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex ">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
+                        {{ __('Movies') }}
+                    </x-nav-link>
+                </div>
+
+                 <!-- Navigation Links -->
+                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex text-white">
+                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                        {{ __('Tv Shows') }}
                     </x-nav-link>
                 </div>
             </div>

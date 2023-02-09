@@ -29,20 +29,22 @@ class MovieApiController extends Controller
         $categories = $this->fetchCategories();
         // $topRated = $this->fetchTopRatedMovies();
 
-$mainImage = $this->GetBackdropTextOnHomepage($trending);
+        $mainImage = $this->GetBackdropTextOnHomepage($trending);
 
-        return view('index', compact('mainImage','trending','categories'));
+        return view('index', compact('mainImage', 'trending', 'categories'));
     }
 
-    function GetBackdropTextOnHomepage($movies){
-return 
-$movies['results'][rand(0,count($movies)-1)];
-}
+    function GetBackdropTextOnHomepage($movies)
+    {
+        $show = $movies['results'][rand(0, count($movies) - 1)];
+
+        return $show;
+    }
 
     public function fetchTrendingMovies()
     {
 
-        try{
+        try {
             $timeWindow = "week";
             $response = Http::get("$this->apiUrl/trending/movie/$timeWindow", [
                 'api_key' => $this->apiKey,
@@ -53,22 +55,31 @@ $movies['results'][rand(0,count($movies)-1)];
             } else {
                 return view('error', ['error' => 'Unable To fetch Result']);
             }
-        }catch(\Exception $e){
+        } catch (\Exception $e) {
             return view('error', ['error' => 'Unable To fetch Result']);
-        }        
+        }
 
 
     }
 
     public function fetchCategories()
     {
-
+try{
         $response = Http::get($this->apiUrl . '/genre/movie/list', [
             'api_key' => $this->apiKey
         ]);
 
         $categories = $response;
-        return $categories->json();
+        if (!$response->failed()) {
+            return $categories->json();
+        } else {
+            return view('error', ['error' => 'Unable To fetch Result']);
+        }
+        
+     } catch (\Exception $e) {
+            return view('error', ['error' => 'Unable To fetch Result']);
+        }
+
     }
 
     // public function fetchTopRatedMovies()
