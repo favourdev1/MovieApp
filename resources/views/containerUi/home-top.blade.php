@@ -12,11 +12,11 @@
             class="text-white rounded-full px-5 py-2 backdrop-blur-sm backdrop-brightness-10 bg-white/30 w-max  text-sm md:text-md mb-6">
             New Movie
         </p>
-        <div class="text-white w-full md:w-2/3 xl:w-2/4">
+        <div class="text-white  w-full md:w-2/3 xl:w-3/4">
 
-            <h3 class="text-8xl font-bold">{{ $mainImage['title'] }}</h3>
+            <h3 class="text:lg xl:text-8xl font-bold">{{ $mainImage['title'] }}</h3>
 
-            <p class="text-2xl text-slate-200 font-light">
+            <p class="text-md lg:text-2xl text-slate-200 font-light">
                 {{ $mainImage['overview'] }}
             </p>
         </div>
