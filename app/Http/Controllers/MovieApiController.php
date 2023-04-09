@@ -28,8 +28,16 @@ class MovieApiController extends Controller
         $trending = $this->fetchTrendingMovies();
         $categories = $this->fetchCategories();
         // $topRated = $this->fetchTopRatedMovies();
-        return view('index', compact('trending','categories'));
+
+$mainImage = $this->GetBackdropTextOnHomepage($trending);
+
+        return view('index', compact('mainImage','trending','categories'));
     }
+
+    function GetBackdropTextOnHomepage($movies){
+return 
+$movies['results'][rand(0,count($movies)-1)];
+}
 
     public function fetchTrendingMovies()
     {
