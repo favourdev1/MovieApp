@@ -1,4 +1,4 @@
-<div class=" bg-neutral-950 flex-1 h-100">
+<div class=" bg-neutral-950 w-2/3 h-100">
     <div class="px-4 h-20 flex items-center border-b border-neutral-900">
 
         <div class="inline-flex flex-1">
@@ -29,37 +29,42 @@
             </div>
         </div>
 
-        <div class="flex-1">
-            dkndkkdknk
-        </div>
 
 
-        <div class="flex-1 text-white">
-            <div class=" autoplay grid grid-cols-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 ">
-                <!-- Column 1 -->
-                <div class="bg-gray-700 p-4">Column 1</div>
-              
-                <!-- Column 2 -->
-                <div class="bg-gray-700 p-4">Column 2</div>
-              
-                <!-- Column 3 -->
-                <div class="bg-gray-700 p-4">Column 3</div>
-              
-                <!-- Column 4 -->
-                <div class="bg-gray-700 p-4">Column 4</div>
+        <div class="w-full h-60 px-5">
+            <div class="glide w-full">
 
-                <div class="bg-gray-700 p-4">Column 1</div>
-              
-                <!-- Column 2 -->
-                <div class="bg-gray-700 p-4">Column 2</div>
-              
-                <!-- Column 3 -->
-                <div class="bg-gray-700 p-4">Column 3</div>
-              
-                <!-- Column 4 -->
-                <div class="bg-gray-700 p-4">Column 4</div>
-              </div>
-              
+                <ul class="flex w-full overflow-x-auto no-scrollbar">
+
+                    <li class=" mr-12   ">
+                        <x-ui.carousel-card title="Army of the dead" description="2021" imgUrl="img/armyofdead.jpg">
+                        </x-ui.carousel-card>
+                    </li>
+                    <li class=" mr-12   ">
+                        <x-ui.carousel-card title="Army of the dead" description="2021" imgUrl="img/armyofdead.jpg">
+                        </x-ui.carousel-card>
+                    </li>
+
+
+
+
+                    <li class=" mr-12   ">
+                        <x-ui.carousel-card title="Army of the dead" description="2021" imgUrl="img/armyofdead.jpg">
+                        </x-ui.carousel-card>
+                    </li>
+
+                    <li class=" mr-12   ">
+                        <x-ui.carousel-card title="Army of the dead" description="2021" imgUrl="img/armyofdead.jpg">
+                        </x-ui.carousel-card>
+                    </li>
+                </ul>
+
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                    <button class="glide__bullet" data-glide-dir="=1"></button>
+                    <button class="glide__bullet" data-glide-dir="=2"></button>
+                </div>
+            </div>
         </div>
 
 

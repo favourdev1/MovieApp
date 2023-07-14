@@ -1,9 +1,15 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body{
-    font-family:'Nunito Sans', sans-serif !important;
+
+body {
+    font-family: 'Nunito Sans', sans-serif !important;
+    /* background: linear-gradient(to bottom, transparent, #00000095) */
+
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
 }

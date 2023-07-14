@@ -10,18 +10,30 @@
         crossorigin="anonymous"></script>
 
 
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    {{-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> --}}
     @vite('resources/css/app.css')
     @vite('resources/js/app.js')
-    @vite('public/js/carousel.js')
-
+  
+    {{-- @vite('public/js/glide/dist/css/glide.core.min.css') --}}
 </head>
 
 <body class="flex flex-col h-screen">
     @yield('content')
 
+    {{-- @vite('public/js/glide/dist/glide.min.js') --}}
+
+    {{-- <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script> --}}
+{{-- 
+    <script>
+        new Glide('.glide', {
+            type: 'carousel',
+            startAt: 0,
+            perView: 3,
+        gap: 40
+        }).mount();
+      </script> --}}
 
 </body>
 
