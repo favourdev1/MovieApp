@@ -1,8 +1,12 @@
 <div
-    {{ $attributes->merge(['class' => 'h-72  bg-cover rounded-3xl bg-no-repeat px-5 py-5', 'style' => " width:30rem;background: linear-gradient(to bottom, transparent, #00000095), url('{$imgUrl}')"]) }}>
+    {{ $attributes->merge(['class' => 'h-72   rounded-2xl bg-no-repeat px-5 bg-center', 
+    'style' => " width:27rem; 
+    background: linear-gradient(to bottom, transparent, #000000), url('{$imgUrl}');
+     background-position:center center;
+      background-size:cover"]) }}>
     <div class="flex flex-col py-4 text-white h-full justify-end">
         <div>
-            <p class="font-medium text-2xl">
+            <p class="font-semibold text-2xl">
                 {{ $title }}
             </p>
 
@@ -29,4 +33,6 @@
             </div>
         </div>
     </div>
+
+
 </div>

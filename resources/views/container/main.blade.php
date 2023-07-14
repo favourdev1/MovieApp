@@ -1,5 +1,5 @@
 <div class=" bg-neutral-950 w-2/3 h-100">
-    <div class="px-4 h-20 flex items-center border-b border-neutral-900">
+    <div class="px-5 h-20 flex items-center border-b border-neutral-900">
 
         <div class="inline-flex flex-1">
             <x-sidebar.menu class="font-medium text-white ">Movies </x-sidebar.menu>
@@ -20,38 +20,36 @@
 
     </div>
 
-    <div class="flex flex-col">
-        <div class="flex items-center justify-between p-4">
-            <p class="text-md font-medium text-white text-lg">Trending Movies</p>
-            <div class="flex items-center ">
-                <p class="text-sm text-neutral-500 mr-3">See all</p>
-                <x-icon.right-icon class="text-neutral-500"></x-icon.right-icon>
-            </div>
-        </div>
 
 
 
-        <div class="w-full h-60 px-5">
-            <div class="glide w-full">
+
+
+    <div class="flex flex-col px-8">
+        <div>
+            <x-ui.main-section-head name="Trending movies"></x-ui.main-section-head>
+
+            <div class="w-full ">
+
 
                 <ul class="flex w-full overflow-x-auto no-scrollbar">
 
                     <li class=" mr-12   ">
-                        <x-ui.carousel-card title="Army of the dead" description="2021" imgUrl="img/armyofdead.jpg">
+                        <x-ui.carousel-card title="Transformers" description="2023" imgUrl="img/transformer.webp">
                         </x-ui.carousel-card>
                     </li>
+
+                    <li class=" mr-12   ">
+                        <x-ui.carousel-card title="Across the spiderverse" description="2021"
+                            imgUrl="img/spiderman.jpg">
+                        </x-ui.carousel-card>
+                    </li>
+
                     <li class=" mr-12   ">
                         <x-ui.carousel-card title="Army of the dead" description="2021" imgUrl="img/armyofdead.jpg">
                         </x-ui.carousel-card>
                     </li>
 
-
-
-
-                    <li class=" mr-12   ">
-                        <x-ui.carousel-card title="Army of the dead" description="2021" imgUrl="img/armyofdead.jpg">
-                        </x-ui.carousel-card>
-                    </li>
 
                     <li class=" mr-12   ">
                         <x-ui.carousel-card title="Army of the dead" description="2021" imgUrl="img/armyofdead.jpg">
@@ -59,16 +57,37 @@
                     </li>
                 </ul>
 
-                <div class="glide__bullets" data-glide-el="controls[nav]">
-                    <button class="glide__bullet" data-glide-dir="=0"></button>
-                    <button class="glide__bullet" data-glide-dir="=1"></button>
-                    <button class="glide__bullet" data-glide-dir="=2"></button>
-                </div>
+
+
             </div>
+
         </div>
 
 
+        <div>
+            <x-ui.main-section-head name="Continue watching" class="mt-4"></x-ui.main-section-head>
+
+            <ul class="flex w-full overflow-x-auto no-scrollbar ">
+
+                <li class=" mr-12   ">
+                    <x-ui.play-card title="Ironman" date="2021" imgUrl="img/ironman.webp" starttime="50:09" endtime="1:24:30"></x-ui.play-card>
+                </li>
+                <li class=" mr-12   ">
+                    <x-ui.play-card title="Flash s03 E18" date="2020" imgUrl="img/the-flash.webp" starttime="23:04" endtime="49:34"></x-ui.play-card>
+                </li>
+                {{-- <li class=" mr-12   ">
+                    <x-ui.play-card title="" date="2021"></x-ui.play-card>
+                </li>
+                <li class=" mr-12   ">
+                    <x-ui.play-card title="" date="2021"></x-ui.play-card> --}}
+                </li>
+            </ul>
+        </div>
     </div>
+
+
+
+
 
 
 </div>
