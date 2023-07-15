@@ -28,7 +28,7 @@
             <div class="inline-flex items-center">
                 <p class="bg-red-600 bg-opacity-50 px-4 py-2 rounded-full text-sm">Watch Now</p>
 
-                <x-icon.plus-icon class="ml-2 p-2 rounded-full text-white bg-neutral-500 bg-opacity-50">
+                <x-icon.plus-icon class="ml-2 p-2 rounded-full text-white bg-neutral-800 bg-opacity-50">
                 </x-icon.plus-icon>
             </div>
         </div>

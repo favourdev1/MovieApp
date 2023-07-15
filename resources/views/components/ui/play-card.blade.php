@@ -1,16 +1,16 @@
 <div
     {{ $attributes->merge([
-        'class' => 'h-48 w-80  rounded-3xl bg-no-repeat px-5 ',
+        'class' => 'h-60 w-96  rounded-3xl bg-no-repeat px-5 ',
         'style' => "  background: linear-gradient(to bottom, transparent, #000000ea), url('{$imgUrl}'); background-position:center center; background-size:cover",
     ]) }}>
     <div class="flex flex-col py-4 text-neutral-200 h-full justify-end">
 
         <div class="inline-flex flex-1
      items-end justify-center">
-            <x-icon.play-icon class="bg-gray-600 bg-opacity-50 rounded-full p-3"></x-icon.play-icon>
+            <x-icon.play-icon class="bg-gray-600 bg-opacity-50 rounded-full p-3 cursor-pointer mb-4"></x-icon.play-icon>
         </div>
         <div class="mb-2">
-            <p class="font-semibold text-xl">
+            <p class="font-semibold text-lg cursor-pointer">
                {{$title}}
             </p>
             <p class="font-light text-xs">
