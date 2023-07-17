@@ -8,7 +8,7 @@
     {{-- <script src="/node_modules/jquery/dist/jquery.min.js"></script> --}}
     <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
         crossorigin="anonymous"></script>
-
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
     {{-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
