@@ -1,7 +1,7 @@
 <div
-    {{ $attributes->merge(['class' => 'h-72   rounded-2xl bg-no-repeat px-5 bg-center', 
+    {{ $attributes->merge(['class' => 'h-64   rounded-2xl bg-no-repeat px-5 bg-center ', 
     'style' => " width:27rem; 
-    background: linear-gradient(to bottom, transparent, #000000), url('{$imgUrl}');
+    background: linear-gradient(to bottomcd , transparent, #000000bb), url('{$imgUrl}');
      background-position:center center;
       background-size:cover"]) }}>
     <div class="flex flex-col py-4 text-white h-full justify-end">
@@ -14,7 +14,7 @@
 
         <div class="flex justify-between">
             <div>
-                <p class="font-light text-sm">
+                <p class="font-light text-sm drop-shadow-2xl">
                     {{ $description }}
                 </p>
                 <div class="flex items-center">
@@ -26,7 +26,7 @@
             </div>
 
             <div class="inline-flex items-center">
-                <p class="bg-red-600 bg-opacity-50 px-4 py-2 rounded-full text-sm">Watch Now</p>
+                <p class="bg-red-600/50 cursor-pointer hover:bg-red-600 px-4 py-3 rounded-full text-sm">Watch Now</p>
 
                 <x-icon.plus-icon class="ml-2 p-2 rounded-full text-white bg-neutral-800 bg-opacity-50">
                 </x-icon.plus-icon>

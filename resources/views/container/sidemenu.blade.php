@@ -1,34 +1,36 @@
 <div class=" flex w-1/6 bg-zinc-900 ">
     @include('container.profile-container  ')
 
-    <div class="flex flex-1 w-full flex-col  pt-20 pb-4  px-5 ">
+    <div class="flex flex-1 w-full flex-col  pt-20 pb-4  pl-5 ">
 
         <div class="">
-        <p class="text-neutral-400 text-sm mb-3 px-2">MENU</p>
-        <x-sidebar.menu>
+            <p class="text-neutral-400 text-sm mb-3 px-2">MENU</p>
+            <x-sidebar.menu>
                 <x-icon.home-icon class="text-red-600"></x-icon.home-icon>
-                <x-text.sidebar-text class="text-neutral-100 font-medium">Home</x-text.sidebar-text>
+                <x-text.sidebar-text class=" w-full text-white font-medium">Home</x-text.sidebar-text>
+                <p class="h-6 w-1.5  bg-red-600 rounded-l-full  "> </p>
 
             </x-sidebar.menu>
             <x-sidebar.menu>
                 <x-icon.discover-icon class="text-neutral-500"></x-icon.discover-icon>
                 <x-text.sidebar-text>Discover</x-text.sidebar-text>
-
+                <p class="h-6 w-1.5  rounded-l-full  "> </p>
             </x-sidebar.menu>
             <x-sidebar.menu>
 
                 <x-icon.group-icon class="text-neutral-500"></x-icon.group-icon>
                 <x-text.sidebar-text>Community</x-text.sidebar-text>
+                <p class="h-6 w-1.5  rounded-l-full  "> </p>
             </x-sidebar.menu>
 
             <x-sidebar.menu>
 
                 <x-icon.clock-icon class="text-neutral-500"></x-icon.clock-icon>
                 <x-text.sidebar-text>Coming Soon</x-text.sidebar-text>
-                <div class="bg-red-800  rounded-full p-3 py-1 ms-auto  text-center ">
-                    <p class="m-0 text-neutral-300 text-sm">2</p>
+                <div class="bg-red-600  rounded-full p-3 py-1 ms-auto  text-center ">
+                    <p class="m-0 text-zinc-900 font-bold text-sm">2</p>
                 </div>
-
+                <p class="h-6 w-1.5  rounded-l-full  "> </p>
             </x-sidebar.menu>
 
 
@@ -72,7 +74,7 @@
 
         <div class="flex-1">
 
-           
+
 
             <x-sidebar.menu>
                 <x-icon.setting-icon></x-icon.setting-icon>
@@ -84,7 +86,7 @@
                 <x-text.sidebar-text>Help</x-text.sidebar-text>
 
             </x-sidebar.menu>
-           
+
         </div>
 
         <x-sidebar.menu>
