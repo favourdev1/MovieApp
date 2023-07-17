@@ -21,7 +21,7 @@ class topRated extends Component
          $this->title = $title;
          $this->description = $description;
          $this->imgUrl = $imgUrl;
-         $this->rating = Factory::create()->randomFloat(2, 6, 8);
+         $this->rating = Factory::create()->randomFloat(1, 6, 8);
  
  
      }

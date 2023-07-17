@@ -23,7 +23,7 @@
 
 
 
-{{-- this is where i am trying to use it in  --}}
+    {{-- this is where i am trying to use it in  --}}
     <div class=" h-full px-8 mt-20">
         <div>
             <x-ui.main-section-head name="Trending movies"></x-ui.main-section-head>
@@ -99,7 +99,7 @@
             {{-- <x-icon.star-icon></x-icon.star-icon> --}}
 
 
-            <ul class="flex w-full overflow-x-auto no-scrollbar ">
+            <ul class="flex w-full ">
 
                 <li class=" mr-7   ">
                     <x-ui.top-rated title="Attack on titan" description="2021" imgUrl="img/mikasa_wallpaper.jpg">

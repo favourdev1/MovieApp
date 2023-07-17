@@ -1,7 +1,7 @@
 <div
     {{ $attributes->merge(['class' => 'h-64   rounded-2xl bg-no-repeat px-5 bg-center ', 
     'style' => " width:27rem; 
-    background: linear-gradient(to bottomcd , transparent, #000000bb), url('{$imgUrl}');
+    background: linear-gradient(to bottom, transparent, #000000bb), url('{$imgUrl}');
      background-position:center center;
       background-size:cover"]) }}>
     <div class="flex flex-col py-4 text-white h-full justify-end">
