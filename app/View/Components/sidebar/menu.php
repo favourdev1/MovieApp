@@ -11,9 +11,10 @@ class menu extends Component
     /**
      * Create a new component instance.
      */
-    public function __construct()
+    public  $hasLine = true;
+    public function __construct($hasLine = null)
     {
-        //
+        $this->hasLine= $hasLine;
     }
 
     /**

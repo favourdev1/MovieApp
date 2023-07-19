@@ -22,6 +22,7 @@
 </head>
 
 <body class="flex flex-col h-screen">
+
     @yield('content')
 
     {{-- @vite('public/js/glide/dist/glide.min.js') --}}

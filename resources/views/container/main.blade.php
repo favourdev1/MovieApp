@@ -105,16 +105,29 @@
                     <x-ui.top-rated title="Attack on titan" description="2021" imgUrl="img/mikasa_wallpaper.jpg">
                     </x-ui.top-rated>
                 </li>
+                <li class=" mr-7   ">
+                    <x-ui.top-rated title="One Piece" description="2021" imgUrl="img/onepiece.jpg">
+                    </x-ui.top-rated>
+                </li>
 
+                <li class=" mr-7   ">
+                    <x-ui.top-rated title="Naruto" description="2021" imgUrl="img/naruto.jpg">
+                    </x-ui.top-rated>
+                </li>
+                
                 <li class=" mr-7   ">
                     <x-ui.top-rated title="Demon Slayer" description="2021" imgUrl="img/demon_slayer.jpg">
                     </x-ui.top-rated>
                 </li>
 
+
+
                 <li class=" mr-7   ">
                     <x-ui.top-rated title="Death note" description="2021" imgUrl="img/deathnote.jpg">
                     </x-ui.top-rated>
                 </li>
+
+
             </ul>
         </div>
     </div>

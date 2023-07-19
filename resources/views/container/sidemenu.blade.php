@@ -8,29 +8,29 @@
             <x-sidebar.menu>
                 <x-icon.home-icon class="text-red-600"></x-icon.home-icon>
                 <x-text.sidebar-text class=" w-full text-white font-medium">Home</x-text.sidebar-text>
-                <p class="h-6 w-1.5  bg-red-600 rounded-l-full  "> </p>
+                <p class="h-6 w-1.5 bg-red-600 rounded-l-full"></p>
 
             </x-sidebar.menu>
             <x-sidebar.menu>
                 <x-icon.discover-icon class="text-neutral-500"></x-icon.discover-icon>
-                <x-text.sidebar-text>Discover</x-text.sidebar-text>
-                <p class="h-6 w-1.5  rounded-l-full  "> </p>
+                <x-text.sidebar-text class="w-full">Discover</x-text.sidebar-text>
+                
             </x-sidebar.menu>
             <x-sidebar.menu>
 
                 <x-icon.group-icon class="text-neutral-500"></x-icon.group-icon>
-                <x-text.sidebar-text>Community</x-text.sidebar-text>
-                <p class="h-6 w-1.5  rounded-l-full  "> </p>
+                <x-text.sidebar-text class="w-full" >Community</x-text.sidebar-text>
+                
             </x-sidebar.menu>
 
             <x-sidebar.menu>
 
                 <x-icon.clock-icon class="text-neutral-500"></x-icon.clock-icon>
-                <x-text.sidebar-text>Coming Soon</x-text.sidebar-text>
+                <x-text.sidebar-text class="w-full">Coming Soon</x-text.sidebar-text>
                 <div class="bg-red-600  rounded-full p-3 py-1 ms-auto  text-center ">
                     <p class="m-0 text-zinc-900 font-bold text-sm">2</p>
                 </div>
-                <p class="h-6 w-1.5  rounded-l-full  "> </p>
+                
             </x-sidebar.menu>
 
 
@@ -46,24 +46,24 @@
 
             <x-sidebar.menu>
                 <x-icon.clock-icon></x-icon.clock-icon>
-                <x-text.sidebar-text class="text-neutral-400 ">Recent</x-text.sidebar-text>
+                <x-text.sidebar-text class="w-full text-neutral-400 ">Recent</x-text.sidebar-text>
 
             </x-sidebar.menu>
             <x-sidebar.menu>
                 <x-icon.bookmark-icon class="text-neutral-500"></x-icon.bookmark-icon>
-                <x-text.sidebar-text>BookMark</x-text.sidebar-text>
+                <x-text.sidebar-text class="w-full">BookMark</x-text.sidebar-text>
 
             </x-sidebar.menu>
             <x-sidebar.menu>
 
                 <x-icon.star-icon class="text-neutral-500"></x-icon.star-icon>
-                <x-text.sidebar-text>Top rated</x-text.sidebar-text>
+                <x-text.sidebar-text class="w-full">Top rated</x-text.sidebar-text>
             </x-sidebar.menu>
 
             <x-sidebar.menu>
 
                 <x-icon.download-icon class="text-neutral-500"></x-icon.download-icon>
-                <x-text.sidebar-text>Downloaded</x-text.sidebar-text>
+                <x-text.sidebar-text class="w-full">Downloaded</x-text.sidebar-text>
 
             </x-sidebar.menu>
 
@@ -78,12 +78,12 @@
 
             <x-sidebar.menu>
                 <x-icon.setting-icon></x-icon.setting-icon>
-                <x-text.sidebar-text class="text-neutral-400 ">Settings</x-text.sidebar-text>
+                <x-text.sidebar-text class="w-full text-neutral-400 ">Settings</x-text.sidebar-text>
 
             </x-sidebar.menu>
             <x-sidebar.menu>
                 <x-icon.help-icon class="text-neutral-500"></x-icon.help-icon>
-                <x-text.sidebar-text>Help</x-text.sidebar-text>
+                <x-text.sidebar-text class="w-full">Help</x-text.sidebar-text>
 
             </x-sidebar.menu>
 
@@ -91,7 +91,7 @@
 
         <x-sidebar.menu>
             <x-icon.logout-icon class="text-neutral-500"></x-icon.logout-icon>
-            <x-text.sidebar-text>Logout</x-text.sidebar-text>
+            <x-text.sidebar-text class="w-full">Logout</x-text.sidebar-text>
 
         </x-sidebar.menu>
     </div>
