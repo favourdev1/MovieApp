@@ -24,7 +24,7 @@
                             <x-icon.down-icon class="hover:bg-zinc-800  rounded-full p-2"></x-icon.down-icon>
                         </div>
                     </x-slot>
-                  
+
                     <x-slot name="content">
                         <x-dropdown-link :href="route('profile.edit')">
                             {{ __('Profile') }}
@@ -118,7 +118,7 @@
     <div class="my-6  ">
         <p class="text-neutral-400 mt-4 mb-3">Genre</p>
 
-        <div class="grid grid-cols-2 gap-2 text-md overflow-x-auto no-scrollbar  ">
+        <div class="grid grid-cols-2 gap-2 text-sm overflow-x-auto no-scrollbar  ">
             <div
                 class="rounded-full flex items-center justify-between  bg-red-600 text-neutral-300 px-4 font-medium py-3 h-full ">
                 Action
@@ -178,7 +178,7 @@
     <div class="">
         <div>
             <div class="flex items-center justify-between my-4  ">
-                <p class="text-white text-xl font-semibold">Recent Download</p>
+                <p class="text-white text-md font-semibold">Recent Download</p>
                 <div class="inline-flex items-center text-neutral-400">
                     <p>See more</p>
                     <x-icon.right-icon></x-icon.right-icon>
@@ -198,7 +198,7 @@
 
         <div>
             <div class="flex items-center justify-between my-4">
-                <p class="text-white text-xl font-semibold">Bookmarked</p>
+                <p class="text-white text-md font-semibold">Bookmarked</p>
                 <div class="inline-flex items-center text-neutral-400">
                     <p>See more</p>
                     <x-icon.right-icon></x-icon.right-icon>
