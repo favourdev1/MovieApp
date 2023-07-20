@@ -99,7 +99,7 @@
             {{-- <x-icon.star-icon></x-icon.star-icon> --}}
 
 
-            <ul class="flex w-full ">
+            <ul class="flex w-full overflow-x-auto no-scrollbar ">
 
                 <li class=" mr-7   ">
                     <x-ui.top-rated title="Attack on titan" description="2021" imgUrl="img/mikasa_wallpaper.jpg">
