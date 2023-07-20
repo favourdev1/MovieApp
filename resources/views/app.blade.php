@@ -14,6 +14,8 @@
 
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> --}}
     @vite('resources/css/app.css')
+
+    @vite('resources/css/main.css')
     @vite('resources/js/app.js')
 
     {{-- @vite('public/js/glide/dist/css/glide.core.min.css') --}}
