@@ -1,4 +1,4 @@
-<div class=" bg-neutral-950 w-2/3 h-full relative overflow-y-auto no-scrollbar ">
+<div class=" bg-neutral-950 w-23 flex h-full relative overflow-y-auto no-scrollbar ">
 
     {{-- top nav --}}
     <div class="px-5 h-20 flex items-center bg-neutral-950 fixed  border-b border-neutral-900 w-2/3">
@@ -14,7 +14,7 @@
             <x-icon.notification-icon class="mx-2 hover:bg-neutral-800 small p-3 rounded-full">
             </x-icon.notification-icon>
             {{-- <x-icon.notification-icon class="mx-2"></x-icon.notification-icon> --}}
-            <x-icon.dropdown-icon class="mx-2 hover:bg-neutral-800 small p-3 rounded-full"></x-icon.dropdown-icon>
+            <x-icon.dropdown-icon class="mx-2 hover:bg-neutral-800 small p-3 rounded-full rotate-90"></x-icon.dropdown-icon>
 
         </div>
     </div>

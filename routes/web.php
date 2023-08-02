@@ -16,16 +16,19 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('index');
-})->middleware('auth');
-
-Route::get('/dashboard', function () {
-    return view('index');
-})->middleware(['auth', 'verified'])->name('index');
-
+});
+// ->middleware('auth');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+})->name('dashboard');
+// ->middleware(['auth', 'verified'])->name('index');
+
+
+// Route::get('/dashboard', function () {
+//     return view('dashboard2');
+// });
+// ->middleware(['auth', 'verified'])->name('dashboard');
 
 
 

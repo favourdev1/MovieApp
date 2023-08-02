@@ -1,4 +1,4 @@
-<div class=" flex flex-col w-1/6 bg-zinc-900 overflow-y-auto px-4 pb-4 no-scrollbar">
+<div class="hidden flex flex-col w-1/6 bg-zinc-900 overflow-y-auto px-4 pb-4 no-scrollbar">
 
 
     <div class="flex-1  ">
@@ -11,7 +11,7 @@
 
 
                 <div class="flex-1 px-3">
-                    <p class="text-neutral-200 text-md font-medium ">{{ Auth::user()->name }}</p>
+                    <p class="text-neutral-200 text-md font-medium ">{{ Auth::user()->firstname}}{{ Auth::user()->lastname}}</p>
 
                     <p class="text-neutral-500 text-sm m-0">{{ Auth::user()->email }}</p>
                 </div>

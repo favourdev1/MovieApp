@@ -23,10 +23,10 @@
    
 </head>
 
-<body class="flex flex-col h-screen">
+<body class="flex flex-col bg-black">
 
     @yield('content')
-
+   
     {{-- @vite('public/js/glide/dist/glide.min.js') --}}
 
     {{-- <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script> --}}
