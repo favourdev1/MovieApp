@@ -31,4 +31,15 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+//   Tmdb APi Configuration
+
+    'tmdb' => [
+        'api_key' => env('TMDB_API_KEY'),
+        'api_url' => env('TMDB_API_URL'),
+    ],
+
+    
+
+
+
 ];

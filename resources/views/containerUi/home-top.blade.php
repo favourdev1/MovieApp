@@ -30,7 +30,7 @@
 
             </div>
         </div>
-
+   
         {{-- Trending --}}
 
         <div class="w-full text-white my-12">
