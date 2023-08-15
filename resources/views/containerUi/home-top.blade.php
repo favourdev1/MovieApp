@@ -30,7 +30,7 @@
 
             </div>
         </div>
-   
+
         {{-- Trending --}}
 
         <div class="w-full text-white my-12">
@@ -43,14 +43,37 @@
 
                 </div>
             </div>
-            <div class="w-full flex items-center justify-start overflow-scroll-x no-scrollbar ">
-                <x-ui.category-card title="Horror Sega" :src="asset('img/horror.jpg')"></x-ui.category-card>
+
+
+
+            {{-- @foreach ($categories['genres'] as $genre)
+          
+            @php
+                print_r($genre['name']);
+            @endphp
+        @endforeach --}}
+
+
+
+            <div class="w-full flex items-center justify-start overflow-scroll-x no-scrollbar text-white ">
+                 @foreach ($topRated as $genre)
+                    <x-ui.category-card :title=" $genre['title'] " :src="asset('img/horror.jpg')"></x-ui.category-card>
+
+                   
+
+                  
+                @endforeach 
+  @php
+                        // print_r($topRated);
+
+                        // count($topRated)
+                    @endphp
+                {{-- {{$categories}} --}}
+                {{-- <x-ui.category-card title="Horror Sega" :src="asset('img/horror.jpg')"></x-ui.category-card>
 
                 <x-ui.category-card title="Horror Sega" :src="asset('img/horror.jpg')"></x-ui.category-card>
 
-                <x-ui.category-card title="Horror Sega" :src="asset('img/horror.jpg')"></x-ui.category-card>
-
-                <x-ui.category-card title="Horror Sega" :src="asset('img/horror.jpg')"></x-ui.category-card>
+                <x-ui.category-card title="Horror Sega" :src="asset('img/horror.jpg')"></x-ui.category-card> --}}
 
             </div>
         </div>

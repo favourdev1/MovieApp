@@ -15,9 +15,9 @@ use App\Http\Controllers\MovieApiController;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+// Route::get('/', function () {
+//     return view('index');
+// });
 // ->middleware('auth');
 
 Route::get('/dashboard', function () {
@@ -43,6 +43,8 @@ Route::middleware('auth')->group(function () {
 
 
 
-Route::get('/genres', [MovieApiController::class, 'fetchTrendingMovies']);
-
+Route::get('/', [MovieApiController::class, 'index']);
+// Route::get('/error', function (){
+// return  view('error');
+// });
 require __DIR__.'/auth.php';

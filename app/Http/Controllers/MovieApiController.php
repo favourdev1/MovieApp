@@ -19,30 +19,53 @@ class MovieApiController extends Controller
         $this->apiKey = config('services.tmdb.api_key');
         $this->apiUrl = config('services.tmdb.api_url');
 
+
+    }
+
+
+    public function index()
+    {
+        $trending = $this->fetchTrendingMovies();
+        $categories = $this->fetchCategories();
+        $topRated = $this->fetchTopRatedMovies();
+        return view('index', compact('topRated'));
     }
 
     public function fetchTrendingMovies()
     {
-
         $timeWindow = "week";
-        $response = Http::get("$this->apiUrl/genre/movie/list", [
+        $response = Http::get("$this->apiUrl/trending/movie/$timeWindow", [
             'api_key' => $this->apiKey,
         ]);
-
         $movies = $response->json();
+        if (!$response->failed()) {
+            return response()->json([$movies]);
+        } else {
+            return view('error', ['error' => 'Unable To fetch Result']);
+        }
 
-        return response()->json(['json'=>$movies]);
-        // return view('/', compact($movies));
 
     }
 
     public function fetchCategories()
     {
-        $response = Http::get($this->apiUrl . '/genre/', [
+
+        $response = Http::get($this->apiUrl . '/genre/movie/list', [
             'api_key' => $this->apiKey
         ]);
 
-        $categories= $response->json();
-        return response()->json(['$categories']);
+        $categories = $response;
+        return $categories->json();
+    }
+
+    public function fetchTopRatedMovies()
+    {
+        $response = Http::get($this->apiUrl . '/movie/top_rated?', [
+            'api_key' => $this->apiKey,
+            'language' => 'en-US',
+        'page' => 1,
+        ]);
+        $topRated = $response;
+        return $topRated;
     }
 }
