@@ -1,6 +1,6 @@
 <nav x-date="{open: false }" class="bg-transparent text-white   text-white">
    <!-- Primary Navigation Menu -->
-    <div class="max-w-7xll mx-auto px-4 sm:px-6 lg:px-8" style="background:linear-gradient( to bottom, #000000,transparent)">
+    <div class="max-w-7xll mx-auto px-4 sm:px-6 lg:px-8 backdrop-blur-sm" style="background: #0000008e">
         <div class="flex justify-between h-16 ">
             <div class="flex" >
                 <!-- Logo -->
@@ -21,6 +21,13 @@
                  <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex text-white">
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Tv Shows') }}
+                    </x-nav-link>
+                </div>
+
+                  <!-- Navigation Links -->
+                  <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex text-white">
+                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+                        {{ __('New And Popular') }}
                     </x-nav-link>
                 </div>
             </div>
@@ -82,7 +89,7 @@
         <!-- Responsive Settings Options -->
         <div class="pt-4 pb-1 border-t border-gray-200 dark:border-gray-600">
             <div class="px-4">
-                <div class="font-medium text-base text-gray-800 dark:text-gray-200">{{ "Auth::user()->name" }}</div>
+                <div class="font-medium text-base text-white dark:text-white">{{ "Auth::user()->name" }}</div>
                 <div class="font-medium text-sm text-gray-500">{{ "Auth::user()->email" }}</div>
             </div>
 

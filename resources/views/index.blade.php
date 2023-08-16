@@ -1,13 +1,13 @@
 @extends('app')
 
 @section('content')
-    <div class="flex min-h-screen">
+    <div class="flex min-h-screen mt-">
         @include('containerUi.home-top')
     
     </div>
 
 
-    <div class="px-7 lg:px-12 ">
+    <div class="px-7 lg:px-12 pt-10 ">
         @include('containerUi.category-vids')
 
         <div>

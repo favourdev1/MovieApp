@@ -36,6 +36,9 @@ class MovieApiController extends Controller
 
     function GetBackdropTextOnHomepage($movies)
     {
+        if(count($movies)<1){
+            return;
+        }
         $show = $movies['results'][rand(0, count($movies) - 1)];
 
         return $show;
