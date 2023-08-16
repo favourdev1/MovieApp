@@ -28,7 +28,7 @@ class MovieApiController extends Controller
         $trending = $this->fetchTrendingMovies();
         $categories = $this->fetchCategories();
         $topRated = $this->fetchTopRatedMovies();
-        return view('index', compact('topRated'));
+        return view('index', compact('topRated','categories'));
     }
 
     public function fetchTrendingMovies()
@@ -66,6 +66,6 @@ class MovieApiController extends Controller
         'page' => 1,
         ]);
         $topRated = $response;
-        return $topRated;
+        return $topRated->json();
     }
 }

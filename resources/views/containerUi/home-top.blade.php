@@ -56,18 +56,14 @@
 
 
             <div class="w-full flex items-center justify-start overflow-scroll-x no-scrollbar text-white ">
-                 @foreach ($topRated as $genre)
-                    <x-ui.category-card :title=" $genre['title'] " :src="asset('img/horror.jpg')"></x-ui.category-card>
-
-                   
-
-                  
-                @endforeach 
-  @php
-                        // print_r($topRated);
-
-                        // count($topRated)
-                    @endphp
+                @foreach ($topRated as $genre)
+                    {{-- <x-ui.category-card :title=" $genre['original_title'] " :src="asset('img/horror.jpg')"></x-ui.category-card> --}}
+                @endforeach
+                @php
+                    print_r($topRated['original_title']);
+                    
+                    count($topRated)
+                @endphp
                 {{-- {{$categories}} --}}
                 {{-- <x-ui.category-card title="Horror Sega" :src="asset('img/horror.jpg')"></x-ui.category-card>
 

@@ -47,4 +47,7 @@ Route::get('/', [MovieApiController::class, 'index']);
 // Route::get('/error', function (){
 // return  view('error');
 // });
+
+
+Route::get('/top', [MovieApiController::class, 'fetchTopRatedMovies']);
 require __DIR__.'/auth.php';
