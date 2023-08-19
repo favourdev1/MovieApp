@@ -1,5 +1,7 @@
 <x-newDashboard.home-Hero class="px-7 lg:px-12">
-    @include('layouts.navbar')
+    @php
+        $apiUrl = 'https://image.tmdb.org/t/p/original/';
+    @endphp @include('layouts.navbar')
 
     <div class="h-full pb-12  flex flex-col justify-end mt-auto">
         <p class="text-md rounded-full bg-slate-400 bg-opacity-50 text-white w-max py-2 px-4 mb-6">
@@ -44,26 +46,24 @@
                 </div>
             </div>
 
+            {{-- @foreach ($categories['genres'] as $genre) --}}
+
+            <div class="div">
+                <div class="w-full flex items-center justify-start overflow-x-scroll  no-scrollbar text-white ">
+
+                    @foreach ($trending['results'] as $trendingMovie)
+                        <x-ui.category-card :title="$trendingMovie['title']" :src="$apiUrl . $trendingMovie['backdrop_path']"></x-ui.category-card>
+                    @endforeach
 
 
-            {{-- @foreach ($categories['genres'] as $genre)
-          
-            @php
-                print_r($genre['name']);
-            @endphp
-        @endforeach --}}
+                </div>
+            </div>
 
+            <div class="w-full flex items-center justify-start overflow-x-scroll no-scrollbar text-white ">
+                {{-- @foreach ($topRated as $genre) --}}
+                {{-- <x-ui.category-card :title=" $genre['original_title'] " :src="asset('img/horror.jpg')"></x-ui.category-card> --}}
+                {{-- @endforeach --}}
 
-
-            <div class="w-full flex items-center justify-start overflow-scroll-x no-scrollbar text-white ">
-                @foreach ($topRated as $genre)
-                    {{-- <x-ui.category-card :title=" $genre['original_title'] " :src="asset('img/horror.jpg')"></x-ui.category-card> --}}
-                @endforeach
-                @php
-                    print_r($topRated['original_title']);
-                    
-                    count($topRated)
-                @endphp
                 {{-- {{$categories}} --}}
                 {{-- <x-ui.category-card title="Horror Sega" :src="asset('img/horror.jpg')"></x-ui.category-card>
 

@@ -27,22 +27,27 @@ class MovieApiController extends Controller
     {
         $trending = $this->fetchTrendingMovies();
         $categories = $this->fetchCategories();
-        $topRated = $this->fetchTopRatedMovies();
-        return view('index', compact('topRated','categories'));
+        // $topRated = $this->fetchTopRatedMovies();
+        return view('index', compact('trending','categories'));
     }
 
     public function fetchTrendingMovies()
     {
-        $timeWindow = "week";
-        $response = Http::get("$this->apiUrl/trending/movie/$timeWindow", [
-            'api_key' => $this->apiKey,
-        ]);
-        $movies = $response->json();
-        if (!$response->failed()) {
-            return response()->json([$movies]);
-        } else {
+
+        try{
+            $timeWindow = "week";
+            $response = Http::get("$this->apiUrl/trending/movie/$timeWindow", [
+                'api_key' => $this->apiKey,
+            ]);
+            $movies = $response;
+            if (!$response->failed()) {
+                return $movies->json();
+            } else {
+                return view('error', ['error' => 'Unable To fetch Result']);
+            }
+        }catch(\Exception $e){
             return view('error', ['error' => 'Unable To fetch Result']);
-        }
+        }        
 
 
     }
@@ -58,14 +63,14 @@ class MovieApiController extends Controller
         return $categories->json();
     }
 
-    public function fetchTopRatedMovies()
-    {
-        $response = Http::get($this->apiUrl . '/movie/top_rated?', [
-            'api_key' => $this->apiKey,
-            'language' => 'en-US',
-        'page' => 1,
-        ]);
-        $topRated = $response;
-        return $topRated->json();
-    }
+    // public function fetchTopRatedMovies()
+    // {
+    //     $response = Http::get($this->apiUrl . '/movie/top_rated?', [
+    //         'api_key' => $this->apiKey,
+    //         'language' => 'en-US',
+    //     'page' => 1,
+    //     ]);
+    //     $topRated = $response;
+    //     return $topRated->json();
+    // }
 }
