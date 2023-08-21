@@ -52,7 +52,7 @@
                 <div class="w-full flex items-center justify-start overflow-x-scroll  no-scrollbar text-white ">
 
                     @foreach ($trending['results'] as $trendingMovie)
-                        <x-ui.category-card :title="$trendingMovie['title']" :src="$apiUrl . $trendingMovie['backdrop_path']"></x-ui.category-card>
+                        <x-ui.category-card :title="''" :src="$apiUrl . $trendingMovie['poster_path']"></x-ui.category-card>
                     @endforeach
 
 
