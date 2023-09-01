@@ -80,7 +80,7 @@ try{
             return view('error', ['error' => 'Unable To fetch Result']);
         }
 
-    }
+    } 
 
     // public function fetchTopRatedMovies()
     // {
