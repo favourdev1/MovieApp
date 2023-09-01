@@ -79,7 +79,7 @@ try{
      } catch (\Exception $e) {
             return view('error', ['error' => 'Unable To fetch Result']);
         }
-
+ 
     } 
 
     // public function fetchTopRatedMovies()
