@@ -64,23 +64,23 @@ class MovieApiController extends Controller
 
     public function fetchCategories()
     {
-try{
-        $response = Http::get($this->apiUrl . '/genre/movie/list', [
-            'api_key' => $this->apiKey
-        ]);
+        try {
+            $response = Http::get($this->apiUrl . '/genre/movie/list', [
+                'api_key' => $this->apiKey
+            ]);
 
-        $categories = $response;
-        if (!$response->failed()) {
-            return $categories->json();
-        } else {
+            $categories = $response;
+            if (!$response->failed()) {
+                return $categories->json();
+            } else {
+                return view('error', ['error' => 'Unable To fetch Result']);
+            }
+
+        } catch (\Exception $e) {
             return view('error', ['error' => 'Unable To fetch Result']);
         }
-        
-     } catch (\Exception $e) {
-            return view('error', ['error' => 'Unable To fetch Result']);
-        }
-   
-    } 
+
+    }
 
     // public function fetchTopRatedMovies()
     // {
