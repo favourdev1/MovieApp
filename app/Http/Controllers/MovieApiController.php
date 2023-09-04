@@ -86,7 +86,7 @@ class MovieApiController extends Controller
     {
         $response = Http::get($this->apiUrl . '/movie/top_rated?', [
             'api_key' => $this->apiKey,
-            'language' => 'en-US',
+            // 'language' => 'en-US',
         'page' => 1,
         ]);
         $topRated = $response;
