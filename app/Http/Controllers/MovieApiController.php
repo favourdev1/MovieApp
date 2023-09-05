@@ -82,14 +82,14 @@ class MovieApiController extends Controller
 
     }
 
-    public function fetchTopRatedMovies()
-    {
-        $response = Http::get($this->apiUrl . '/movie/top_rated?', [
-            'api_key' => $this->apiKey,
-            // 'language' => 'en-US',
-        'page' => 1,
-        ]);
-        $topRated = $response;
-        return $topRated->json();
-    } 
+    // public function fetchTopRatedMovies()
+    // {
+    //     $response = Http::get($this->apiUrl . '/movie/top_rated?', [
+    //         'api_key' => $this->apiKey,
+    //         // 'language' => 'en-US',
+    //     'page' => 1,
+    //     ]);
+    //     $topRated = $response;
+    //     return $topRated->json();
+    // } 
 }
